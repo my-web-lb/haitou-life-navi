@@ -10,16 +10,16 @@ const funds = [
     tags: ["世界のベスト", "毎月分配", "世界株", "投信", "高配当"]
   },
 
-{
-  name: "WCM 世界成長株厳選ファンド",
-  type: "投資信託",
-  yield: "高め",
-  frequency: "分配型",
-  fee: "高め",
-  nisa: "対象外",
-  url: "funds/wcm.html",
-  tags: ["WCM", "世界株", "成長株", "投信", "高配当"]
-},
+  {
+    name: "WCM 世界成長株厳選ファンド",
+    type: "投資信託",
+    yield: "高め",
+    frequency: "分配型",
+    fee: "高め",
+    nisa: "対象外",
+    url: "funds/wcm.html",
+    tags: ["WCM", "世界株", "成長株", "投信", "高配当"]
+  },
 
   {
     name: "【1489】日経高配当株50",
@@ -28,6 +28,7 @@ const funds = [
     frequency: "年4回",
     fee: "低め",
     nisa: "NISA成長投資枠",
+    url: "funds/1489.html",
     tags: ["1489", "日本株", "ETF", "高配当", "NISA"]
   },
 
@@ -38,6 +39,7 @@ const funds = [
     frequency: "毎月分配",
     fee: "中",
     nisa: "対象外",
+    url: "funds/563a.html",
     tags: ["563A", "GXNAS100Dカバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
   },
 
@@ -48,6 +50,7 @@ const funds = [
     frequency: "毎月分配",
     fee: "中〜高",
     nisa: "対象外",
+    url: "funds/rakuten-jepq.html",
     tags: ["楽天JEPQ", "毎月分配", "NASDAQ100", "投信", "高配当"]
   },
 
@@ -69,6 +72,7 @@ const funds = [
     frequency: "年4回",
     fee: "中",
     nisa: "NISA成長投資枠",
+    url: "funds/sbi-schd.html",
     tags: ["SBI SCHD", "米国高配当", "米国株", "NISA", "投信"]
   },
 
@@ -79,6 +83,7 @@ const funds = [
     frequency: "年4回",
     fee: "低い",
     nisa: "NISA成長投資枠",
+    url: "funds/vym.html",
     tags: ["米国株", "ETF", "高配当", "NISA"]
   },
 
@@ -89,6 +94,7 @@ const funds = [
     frequency: "年4回",
     fee: "低い",
     nisa: "NISA成長投資枠",
+    url: "funds/hdv.html",
     tags: ["米国株", "ETF", "高配当", "NISA"]
   },
 
@@ -99,6 +105,7 @@ const funds = [
     frequency: "毎月分配",
     fee: "中",
     nisa: "対象外",
+    url: "funds/qyld.html",
     tags: ["毎月分配", "米国株", "ETF", "高配当"]
   }
 ];
