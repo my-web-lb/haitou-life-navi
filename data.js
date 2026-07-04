@@ -12,7 +12,7 @@ const funds = [
     name: "WCM 世界成長株厳選ファンド",
     type: "投資信託",
     yield: "高め",
-    frequency: "毎月分配",
+    frequency: "分配型",
     fee: "高め",
     nisa: "対象外の場合あり",
     tags: ["WCM", "世界株", "成長株", "投信", "高配当"]
@@ -33,9 +33,9 @@ const funds = [
     frequency: "毎月分配",
     fee: "中",
     nisa: "NISA",
-    tags: ["563A", "カバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
+    tags: ["563A", "GXNAS100Dカバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
   },
-{
+  {
     name: "楽天SCHD",
     type: "投資信託",
     yield: "中",
@@ -44,7 +44,7 @@ const funds = [
     nisa: "NISA",
     url: "funds/rakuten-schd.html",
     tags: ["楽天SCHD", "米国高配当", "米国株", "NISA", "投信"]
-}
+  },
   {
     name: "SBI SCHD",
     type: "投資信託",
