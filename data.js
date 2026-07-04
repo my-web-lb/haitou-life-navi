@@ -6,7 +6,7 @@ const funds = [
     frequency: "毎月分配",
     fee: "高め",
     nisa: "対象外の場合あり",
-    tags: ["毎月分配", "世界株", "投信"]
+    tags: ["毎月分配", "世界株", "投信", "高配当"]
   },
   {
     name: "Tracers 日経平均高配当株50",
@@ -78,7 +78,7 @@ const funds = [
     frequency: "毎月分配",
     fee: "中",
     nisa: "対象外の場合あり",
-    tags: ["毎月分配", "米国株", "ETF", "高分配"]
+    tags: ["毎月分配", "米国株", "ETF", "高配当"]
   },
   {
     name: "2865 グローバルX NASDAQ100・カバード・コール ETF",
@@ -87,6 +87,6 @@ const funds = [
     frequency: "毎月分配",
     fee: "中",
     nisa: "NISA",
-    tags: ["毎月分配", "国内ETF", "高分配", "NISA"]
+    tags: ["毎月分配", "国内ETF", "高配当", "NISA"]
   }
 ];
