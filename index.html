@@ -6,21 +6,24 @@
   <title>配当生活ナビ｜高配当ETF・投信比較</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <div class="logo">配当生活ナビ</div>
-<nav>
-<a href="ranking.html">ランキング</a>
-<a href="#comparison">比較表</a>
-<a href="broker.html">証券会社比較</a>
-<a href="#simulator">シミュレーター</a>
-</nav>
+
+  <nav>
+    <a href="ranking.html">ランキング</a>
+    <a href="#comparison">比較表</a>
+    <a href="broker.html">証券会社比較</a>
+    <a href="#simulator">シミュレーター</a>
+  </nav>
 </header>
 
 <section class="hero">
   <h1>高配当ETF・投信を<br>かんたん比較</h1>
   <p>分配金・利回り・NISA対応をまとめてチェック</p>
+
   <div class="search-box">
     <input id="searchInput" type="text" placeholder="例：毎月分配 米国株 NISA">
     <button onclick="searchFunds()">検索</button>
@@ -40,7 +43,7 @@
   <div id="fundList" class="card-grid"></div>
 </main>
 
-  <section class="comparison" id="comparison">
+<section class="comparison" id="comparison">
   <h2>人気商品の比較表</h2>
   <p>高配当ETF・投信を、分配頻度・投資対象・NISA対応で比較できます。</p>
 
@@ -56,6 +59,7 @@
           <th>特徴</th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <td>楽天SCHD</td>
@@ -65,6 +69,7 @@
           <td>○</td>
           <td>米国高配当の王道候補</td>
         </tr>
+
         <tr>
           <td>SBI SCHD</td>
           <td>投資信託</td>
@@ -73,6 +78,7 @@
           <td>○</td>
           <td>低コスト重視向け</td>
         </tr>
+
         <tr>
           <td>Tracers 日経平均高配当株50</td>
           <td>投資信託</td>
@@ -81,6 +87,7 @@
           <td>○</td>
           <td>日本株で分配金を狙える</td>
         </tr>
+
         <tr>
           <td>1489 日経高配当株50 ETF</td>
           <td>ETF</td>
@@ -89,66 +96,44 @@
           <td>○</td>
           <td>日本高配当ETFの定番</td>
         </tr>
+
         <tr>
           <td>QYLD</td>
           <td>海外ETF</td>
           <td>NASDAQ100系</td>
           <td>毎月分配</td>
-          <td>×</td>
+          <td>△</td>
           <td>高分配だが値動きに注意</td>
         </tr>
       </tbody>
     </table>
   </div>
 </section>
-  
+
 <section class="simulator" id="simulator">
+  <h2>配当金シミュレーター</h2>
 
-<h2>配当金シミュレーター</h2>
+  <p>投資額から分配金、または欲しい分配金から必要資金を計算できます。</p>
 
-<p>
-投資額から分配金、または欲しい分配金から必要資金を計算できます。
-</p>
+  <h3>① 投資額から計算</h3>
 
+  <input id="amount" type="number" placeholder="投資額 例：10000000">
+  <input id="yieldRate" type="number" placeholder="利回り 例：5">
 
-<h3>① 投資額から計算</h3>
+  <button onclick="calculateDividend()">分配金を計算</button>
 
-<input id="amount" 
-type="number" 
-placeholder="投資額 例：10000000">
+  <div id="result"></div>
 
-<input id="yieldRate" 
-type="number" 
-placeholder="利回り 例：5">
+  <hr>
 
-<button onclick="calculateDividend()">
-分配金を計算
-</button>
+  <h3>② 必要資金を逆算</h3>
 
+  <input id="targetIncome" type="number" placeholder="欲しい月額配当 例：50000">
+  <input id="targetYield" type="number" placeholder="想定利回り 例：5">
 
-<div id="result"></div>
+  <button onclick="calculateNeedMoney()">必要資金を計算</button>
 
-
-<hr>
-
-
-<h3>② 必要資金を逆算</h3>
-
-<input id="targetIncome" 
-type="number" 
-placeholder="欲しい月額配当 例：50000">
-
-<input id="targetYield" 
-type="number" 
-placeholder="想定利回り 例：5">
-
-<button onclick="calculateNeedMoney()">
-必要資金を計算
-</button>
-
-
-<div id="needResult"></div>
-
+  <div id="needResult"></div>
 </section>
 
 <footer>
@@ -157,5 +142,6 @@ placeholder="想定利回り 例：5">
 
 <script src="data.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
