@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>配当生活ナビ｜高配当ETF・投信比較</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <div class="logo">配当生活ナビ</div>
+  <nav>
+    <a href="#">ランキング</a>
+    <a href="#">投信</a>
+    <a href="#">ETF</a>
+    <a href="#">シミュレーター</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>高配当ETF・投信を<br>かんたん比較</h1>
+  <p>分配金・利回り・NISA対応をまとめてチェック</p>
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="例：毎月分配 米国株 NISA">
+    <button onclick="searchFunds()">検索</button>
+  </div>
+</section>
+
+<section class="filters">
+  <button onclick="filterFunds('毎月分配')">毎月分配</button>
+  <button onclick="filterFunds('日本株')">日本株</button>
+  <button onclick="filterFunds('米国株')">米国株</button>
+  <button onclick="filterFunds('NISA')">NISA</button>
+  <button onclick="showAllFunds()">すべて表示</button>
+</section>
+
+<main>
+  <h2>人気の高配当商品</h2>
+  <div id="fundList" class="card-grid"></div>
+</main>
+
+<section class="simulator">
+  <h2>分配金シミュレーター</h2>
+  <p>投資額と利回りから、年間・月間の分配金目安を計算できます。</p>
+
+  <input id="amount" type="number" placeholder="投資額 例：1000000">
+  <input id="yieldRate" type="number" placeholder="利回り 例：5">
+  <button onclick="calculateDividend()">計算する</button>
+
+  <div id="result"></div>
+</section>
+
+<footer>
+  <p>※本サイトは情報提供を目的としており、投資判断は自己責任でお願いします。</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
