@@ -224,3 +224,8 @@ footer {
     flex-direction: column;
   }
 }
+.link-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
