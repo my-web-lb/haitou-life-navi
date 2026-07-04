@@ -23,6 +23,22 @@ function displayFunds(list) {
       return `<span class="badge">${tag}</span>`;
     }).join("");
 
+    let buttonHtml = "";
+
+    if (fund.url) {
+      buttonHtml = `
+        <button class="detail-btn" onclick="location.href='${fund.url}'">
+          詳しく見る
+        </button>
+      `;
+    } else {
+      buttonHtml = `
+        <button class="detail-btn" onclick="alert('詳細ページは準備中です')">
+          詳しく見る
+        </button>
+      `;
+    }
+
     card.innerHTML = `
       <h3>${fund.name}</h3>
 
@@ -38,11 +54,7 @@ function displayFunds(list) {
         <p><strong>NISA：</strong>${fund.nisa}</p>
       </div>
 
-<button 
-class="detail-btn"
-onclick="location.href='${fund.url}'">
-詳しく見る
-</button>
+      ${buttonHtml}
     `;
 
     fundList.appendChild(card);
@@ -51,6 +63,9 @@ onclick="location.href='${fund.url}'">
 
 function searchFunds() {
   const input = document.getElementById("searchInput");
+
+  if (!input) return;
+
   const keyword = input.value.trim();
 
   if (keyword === "") {
@@ -84,7 +99,10 @@ function filterFunds(tag) {
 
 function showAllFunds() {
   const input = document.getElementById("searchInput");
-  if (input) input.value = "";
+
+  if (input) {
+    input.value = "";
+  }
 
   displayFunds(funds);
 }
@@ -93,6 +111,8 @@ function calculateDividend() {
   const amountInput = document.getElementById("amount");
   const rateInput = document.getElementById("yieldRate");
   const resultBox = document.getElementById("result");
+
+  if (!amountInput || !rateInput || !resultBox) return;
 
   const amount = Number(amountInput.value);
   const yieldRate = Number(rateInput.value);
@@ -115,6 +135,8 @@ function calculateNeedMoney() {
   const rateInput = document.getElementById("targetYield");
   const resultBox = document.getElementById("needResult");
 
+  if (!incomeInput || !rateInput || !resultBox) return;
+
   const income = Number(incomeInput.value);
   const rate = Number(rateInput.value);
 
@@ -130,4 +152,6 @@ function calculateNeedMoney() {
     "必要投資額：約" + Math.round(need).toLocaleString() + "円";
 }
 
-displayFunds(funds);
+if (typeof funds !== "undefined") {
+  displayFunds(funds);
+}
