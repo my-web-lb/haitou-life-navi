@@ -18,6 +18,24 @@ const funds = [
     tags: ["WCM", "世界株", "成長株", "投信", "高配当"]
   },
   {
+    name: "【1489】日経高配当株50",
+    type: "ETF",
+    yield: "中〜高",
+    frequency: "年4回",
+    fee: "低め",
+    nisa: "NISA成長投資枠",
+    tags: ["1489", "日本株", "ETF", "高配当", "NISA"]
+  },
+  {
+    name: "【563A】GXNAS100Dカバコ",
+    type: "ETF",
+    yield: "高め",
+    frequency: "毎月分配",
+    fee: "中",
+    nisa: "対象外",
+    tags: ["563A", "GXNAS100Dカバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
+  },
+  {
     name: "楽天・JEPQ",
     type: "投資信託",
     yield: "高め",
@@ -25,15 +43,6 @@ const funds = [
     fee: "中〜高",
     nisa: "対象外",
     tags: ["楽天JEPQ", "毎月分配", "NASDAQ100", "投信", "高配当"]
-  },
-  {
-    name: "563A GXNAS100Dカバコ",
-    type: "ETF",
-    yield: "高め",
-    frequency: "毎月分配",
-    fee: "中",
-    nisa: "対象外",
-    tags: ["563A", "GXNAS100Dカバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
   },
   {
     name: "楽天SCHD",
@@ -53,15 +62,6 @@ const funds = [
     fee: "中",
     nisa: "NISA成長投資枠",
     tags: ["SBI SCHD", "米国高配当", "米国株", "NISA", "投信"]
-  },
-  {
-    name: "1489 日経高配当株50",
-    type: "ETF",
-    yield: "中〜高",
-    frequency: "年4回",
-    fee: "低め",
-    nisa: "NISA成長投資枠",
-    tags: ["日本株", "ETF", "高配当", "NISA"]
   },
   {
     name: "VYM",
