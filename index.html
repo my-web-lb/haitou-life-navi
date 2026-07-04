@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>配当生活ナビ｜高配当ETF・投信比較</title>
+  <meta name="description" content="高配当ETF・投資信託を比較できる配当生活ナビ。分配金シミュレーター、ランキング、証券会社比較も掲載。">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,6 +14,7 @@
   <div class="logo">配当生活ナビ</div>
 
   <nav>
+    <a href="index.html">ホーム</a>
     <a href="ranking.html">ランキング</a>
     <a href="#comparison">比較表</a>
     <a href="broker.html">証券会社比較</a>
@@ -62,48 +64,48 @@
 
       <tbody>
         <tr>
+          <td>インベスコ 世界厳選株式オープン</td>
+          <td>投資信託</td>
+          <td>世界株</td>
+          <td>毎月分配</td>
+          <td>△</td>
+          <td>世界のベストとして知られる毎月決算型</td>
+        </tr>
+
+        <tr>
+          <td>WCM 世界成長株厳選ファンド</td>
+          <td>投資信託</td>
+          <td>世界成長株</td>
+          <td>分配型</td>
+          <td>△</td>
+          <td>世界の成長企業へ厳選投資</td>
+        </tr>
+
+        <tr>
+          <td>楽天・JEPQ</td>
+          <td>投資信託</td>
+          <td>NASDAQ100系</td>
+          <td>毎月分配</td>
+          <td>○</td>
+          <td>毎月のインカム収入を目指す</td>
+        </tr>
+
+        <tr>
+          <td>563A GXNAS100Dカバコ</td>
+          <td>ETF</td>
+          <td>NASDAQ100</td>
+          <td>毎月分配</td>
+          <td>○</td>
+          <td>カバードコール戦略ETF</td>
+        </tr>
+
+        <tr>
           <td>楽天SCHD</td>
           <td>投資信託</td>
           <td>米国高配当株</td>
           <td>年4回</td>
           <td>○</td>
-          <td>米国高配当の王道候補</td>
-        </tr>
-
-        <tr>
-          <td>SBI SCHD</td>
-          <td>投資信託</td>
-          <td>米国高配当株</td>
-          <td>年4回</td>
-          <td>○</td>
-          <td>低コスト重視向け</td>
-        </tr>
-
-        <tr>
-          <td>Tracers 日経平均高配当株50</td>
-          <td>投資信託</td>
-          <td>日本高配当株</td>
-          <td>年4回</td>
-          <td>○</td>
-          <td>日本株で分配金を狙える</td>
-        </tr>
-
-        <tr>
-          <td>1489 日経高配当株50 ETF</td>
-          <td>ETF</td>
-          <td>日本高配当株</td>
-          <td>年4回</td>
-          <td>○</td>
-          <td>日本高配当ETFの定番</td>
-        </tr>
-
-        <tr>
-          <td>QYLD</td>
-          <td>海外ETF</td>
-          <td>NASDAQ100系</td>
-          <td>毎月分配</td>
-          <td>×</td>
-          <td>高分配だが値動きに注意</td>
+          <td>米国高配当株へ分散投資</td>
         </tr>
       </tbody>
     </table>
@@ -112,14 +114,11 @@
 
 <section class="simulator" id="simulator">
   <h2>配当金シミュレーター</h2>
-
   <p>投資額から分配金、または欲しい分配金から必要資金を計算できます。</p>
 
   <h3>① 投資額から計算</h3>
-
   <input id="amount" type="number" placeholder="投資額 例：10,000,000">
   <input id="yieldRate" type="number" placeholder="想定利回り(%) 例：5">
-
   <button onclick="calculateDividend()">分配金を計算</button>
 
   <div id="result"></div>
@@ -127,10 +126,8 @@
   <hr>
 
   <h3>② 必要資金を逆算</h3>
-
   <input id="targetIncome" type="number" placeholder="欲しい月額配当 例：50,000">
   <input id="targetYield" type="number" placeholder="想定利回り(%) 例：5">
-
   <button onclick="calculateNeedMoney()">必要資金を計算</button>
 
   <div id="needResult"></div>
