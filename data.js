@@ -5,7 +5,7 @@ const funds = [
     yield: "高め",
     frequency: "毎月分配",
     fee: "高め",
-    nisa: "対象外の場合あり",
+    nisa: "対象外",
     tags: ["世界のベスト", "毎月分配", "世界株", "投信", "高配当"]
   },
   {
@@ -14,7 +14,7 @@ const funds = [
     yield: "高め",
     frequency: "分配型",
     fee: "高め",
-    nisa: "対象外の場合あり",
+    nisa: "対象外",
     tags: ["WCM", "世界株", "成長株", "投信", "高配当"]
   },
   {
@@ -23,7 +23,7 @@ const funds = [
     yield: "高め",
     frequency: "毎月分配",
     fee: "中〜高",
-    nisa: "NISA",
+    nisa: "対象外",
     tags: ["楽天JEPQ", "毎月分配", "NASDAQ100", "投信", "高配当"]
   },
   {
@@ -32,7 +32,7 @@ const funds = [
     yield: "高め",
     frequency: "毎月分配",
     fee: "中",
-    nisa: "NISA",
+    nisa: "対象外",
     tags: ["563A", "GXNAS100Dカバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
   },
   {
@@ -41,7 +41,7 @@ const funds = [
     yield: "中",
     frequency: "年4回",
     fee: "中",
-    nisa: "NISA",
+    nisa: "NISA成長投資枠",
     url: "funds/rakuten-schd.html",
     tags: ["楽天SCHD", "米国高配当", "米国株", "NISA", "投信"]
   },
@@ -51,7 +51,7 @@ const funds = [
     yield: "中",
     frequency: "年4回",
     fee: "中",
-    nisa: "NISA",
+    nisa: "NISA成長投資枠",
     tags: ["SBI SCHD", "米国高配当", "米国株", "NISA", "投信"]
   },
   {
@@ -60,7 +60,7 @@ const funds = [
     yield: "中〜高",
     frequency: "年4回",
     fee: "低め",
-    nisa: "NISA",
+    nisa: "NISA成長投資枠",
     tags: ["日本株", "ETF", "高配当", "NISA"]
   },
   {
@@ -69,7 +69,7 @@ const funds = [
     yield: "中",
     frequency: "年4回",
     fee: "低い",
-    nisa: "NISA",
+    nisa: "NISA成長投資枠",
     tags: ["米国株", "ETF", "高配当", "NISA"]
   },
   {
@@ -78,7 +78,7 @@ const funds = [
     yield: "中",
     frequency: "年4回",
     fee: "低い",
-    nisa: "NISA",
+    nisa: "NISA成長投資枠",
     tags: ["米国株", "ETF", "高配当", "NISA"]
   },
   {
@@ -87,7 +87,7 @@ const funds = [
     yield: "高め",
     frequency: "毎月分配",
     fee: "中",
-    nisa: "対象外の場合あり",
+    nisa: "対象外",
     tags: ["毎月分配", "米国株", "ETF", "高配当"]
   }
 ];
