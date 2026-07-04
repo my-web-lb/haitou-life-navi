@@ -38,7 +38,11 @@ function displayFunds(list) {
         <p><strong>NISA：</strong>${fund.nisa}</p>
       </div>
 
-      <button class="detail-btn">詳しく見る</button>
+<button 
+class="detail-btn"
+onclick="location.href='${fund.url}'">
+詳しく見る
+</button>
     `;
 
     fundList.appendChild(card);
