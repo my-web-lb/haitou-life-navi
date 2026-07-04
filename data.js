@@ -35,15 +35,16 @@ const funds = [
     nisa: "NISA",
     tags: ["563A", "カバコ", "毎月分配", "NASDAQ100", "ETF", "高配当"]
   },
-  {
+{
     name: "楽天SCHD",
     type: "投資信託",
     yield: "中",
     frequency: "年4回",
     fee: "中",
     nisa: "NISA",
+    url: "funds/rakuten-schd.html",
     tags: ["楽天SCHD", "米国高配当", "米国株", "NISA", "投信"]
-  },
+}
   {
     name: "SBI SCHD",
     type: "投資信託",
