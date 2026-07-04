@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽天SCHDに100万円投資したら分配金はいくら？｜配当生活ナビ</title>
+  <meta name="description" content="楽天SCHDに100万円・500万円・1000万円投資した場合の分配金目安をシミュレーション。NISAや注意点も解説。">
+  <link rel="stylesheet" href="../style.css">
+</head>
 
+<body>
+
+<header>
+  <div class="logo">配当生活ナビ</div>
+  <nav>
+    <a href="../index.html">ホーム</a>
+    <a href="../ranking.html">ランキング</a>
+    <a href="../index.html#comparison">比較表</a>
+    <a href="../broker.html">証券会社比較</a>
+    <a href="../index.html#simulator">シミュレーター</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>楽天SCHDに100万円投資したら<br>分配金はいくら？</h1>
+  <p>投資額別に年間・月間の分配金目安をチェック</p>
+</section>
+
+<main>
+
+  <section class="card">
+    <h2>楽天SCHDとは？</h2>
+    <p>
+      楽天SCHDは、米国高配当株への投資を目指す投資信託です。
+      年4回分配型の商品として、配当収入を重視する投資家から注目されています。
+    </p>
+
+    <div class="badges">
+      <span class="badge">米国株</span>
+      <span class="badge">高配当</span>
+      <span class="badge">年4回分配</span>
+      <span class="badge">NISA</span>
+    </div>
+  </section>
+
+  <section class="comparison">
+    <h2>投資額別の分配金目安</h2>
+    <p>ここでは仮に利回り4%で計算しています。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>投資額</th>
+            <th>年間分配金</th>
+            <th>月平均</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>100万円</td>
+            <td>約40,000円</td>
+            <td>約3,333円</td>
+          </tr>
+          <tr>
+            <td>500万円</td>
+            <td>約200,000円</td>
+            <td>約16,666円</td>
+          </tr>
+          <tr>
+            <td>1000万円</td>
+            <td>約400,000円</td>
+            <td>約33,333円</td>
+          </tr>
+          <tr>
+            <td>3000万円</td>
+            <td>約1,200,000円</td>
+            <td>約100,000円</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>メリット</h2>
+    <p>・米国高配当株に分散投資しやすい</p>
+    <p>・投資信託なので積立しやすい</p>
+    <p>・NISA口座で使いやすい</p>
+  </section>
+
+  <section class="card">
+    <h2>注意点</h2>
+    <p>・分配金は保証されていません</p>
+    <p>・為替の影響を受けます</p>
+    <p>・基準価額が下がる可能性があります</p>
+  </section>
+
+  <section class="card">
+    <h2>楽天SCHDはどこで買える？</h2>
+    <p>
+      楽天SCHDを購入するには、対応している証券会社の口座が必要です。
+      証券会社ごとの対応状況や使いやすさを比較しておきましょう。
+    </p>
+
+    <a href="../broker.html">
+      <button class="detail-btn">証券会社を比較する</button>
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <p>※本ページは情報提供を目的としており、投資判断は自己責任でお願いします。</p>
+</footer>
+
+</body>
+</html>
