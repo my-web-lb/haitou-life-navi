@@ -1,1 +1,191 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f6f8fb;
+  color: #222;
+}
+
+header {
+  background: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0b7a53;
+}
+
+nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #e8fff4, #eef4ff);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.search-box {
+  margin: 32px auto 0;
+  max-width: 620px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input,
+.simulator input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #0b7a53;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.filters {
+  padding: 24px 8%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main {
+  padding: 30px 8%;
+}
+
+h2 {
+  margin-bottom: 22px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0b7a53;
+}
+
+.badges {
+  margin: 12px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #e8fff4;
+  color: #0b7a53;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.info {
+  line-height: 1.9;
+  color: #444;
+}
+
+.detail-btn {
+  margin-top: 14px;
+  width: 100%;
+}
+
+.simulator {
+  background: white;
+  margin: 40px 8%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.simulator input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b7a53;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+}
