@@ -80,3 +80,35 @@ function calculateDividend() {
 }
 
 displayFunds(funds);
+function calculateNeedMoney(){
+
+ const income =
+ Number(document.getElementById("targetIncome").value);
+
+ const rate =
+ Number(document.getElementById("targetYield").value);
+
+
+ if(!income || !rate){
+
+ document.getElementById("needResult").innerHTML =
+ "入力してください";
+
+ return;
+
+ }
+
+
+ const yearlyIncome = income * 12;
+
+ const need =
+ yearlyIncome / (rate /100);
+
+
+ document.getElementById("needResult").innerHTML =
+
+ `
+ 必要投資額：約${Math.round(need).toLocaleString()}円
+ `;
+
+}
