@@ -189,3 +189,36 @@ footer {
     flex-direction: column;
   }
 }
+.comparison {
+  background: white;
+  margin: 40px 8%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+th {
+  background: #0b7a53;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #f6fdf9;
+}
