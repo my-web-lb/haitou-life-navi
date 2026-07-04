@@ -1,150 +1,298 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>配当生活ナビ｜高配当ETF・投信比較</title>
-  <meta name="description" content="高配当ETF・投資信託を比較できる配当生活ナビ。分配金シミュレーター、ランキング、証券会社比較も掲載。">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>配当生活ナビ｜高配当ETF・投信比較</title>
+
+<meta name="description"
+content="高配当ETF・投資信託を比較できる配当生活ナビ。分配金ランキングやシミュレーターを掲載。">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-<header>
-  <div class="logo">配当生活ナビ</div>
 
-  <nav>
-    <a href="index.html">ホーム</a>
-    <a href="ranking.html">ランキング</a>
-    <a href="#comparison">比較表</a>
-    <a href="broker.html">証券会社比較</a>
-    <a href="#simulator">シミュレーター</a>
-  </nav>
+<header>
+
+<div class="logo">
+配当生活ナビ
+</div>
+
+
+<nav>
+<a href="index.html">ホーム</a>
+<a href="ranking.html">ランキング</a>
+<a href="#comparison">比較表</a>
+<a href="broker.html">証券会社比較</a>
+<a href="#simulator">シミュレーター</a>
+</nav>
+
 </header>
 
-<section class="hero">
-  <h1>高配当ETF・投信を<br>かんたん比較</h1>
-  <p>分配金・利回り・NISA対応をまとめてチェック</p>
 
-  <div class="search-box">
-    <input id="searchInput" type="text" placeholder="例：毎月分配 米国株 NISA">
-    <button onclick="searchFunds()">検索</button>
-  </div>
+
+<section class="hero">
+
+<h1>
+高配当ETF・投信を<br>
+かんたん比較
+</h1>
+
+<p>
+分配金・利回り・NISA対応をまとめてチェック
+</p>
+
+
+<div class="search-box">
+
+<input
+id="searchInput"
+type="text"
+placeholder="例：毎月分配 米国株 高配当">
+
+<button onclick="searchFunds()">
+検索
+</button>
+
+</div>
+
 </section>
+
+
+
 
 <section class="filters">
-  <button onclick="filterFunds('毎月分配')">毎月分配</button>
-  <button onclick="filterFunds('日本株')">日本株</button>
-  <button onclick="filterFunds('米国株')">米国株</button>
-  <button onclick="filterFunds('NISA')">NISA</button>
-  <button onclick="showAllFunds()">すべて表示</button>
+
+<button onclick="filterFunds('毎月分配')">
+毎月分配
+</button>
+
+<button onclick="filterFunds('日本株')">
+日本株
+</button>
+
+<button onclick="filterFunds('米国株')">
+米国株
+</button>
+
+<button onclick="filterFunds('NISA')">
+NISA
+</button>
+
+<button onclick="showAllFunds()">
+すべて表示
+</button>
+
 </section>
+
+
+
 
 <main>
-  <h2>人気の高配当商品</h2>
-  <div id="fundList" class="card-grid"></div>
+
+<h2>
+人気の高配当商品
+</h2>
+
+<div id="fundList" class="card-grid"></div>
+
 </main>
 
+
+
+
+
 <section class="comparison" id="comparison">
-  <h2>人気商品の比較表</h2>
-  <p>最新ランキング順に、高配当ETF・投信を比較できます。</p>
 
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>順位</th>
-          <th>商品名</th>
-          <th>種類</th>
-          <th>投資対象</th>
-          <th>分配頻度</th>
-          <th>NISA</th>
-          <th>特徴</th>
-        </tr>
-      </thead>
+<h2>
+人気商品の比較表
+</h2>
 
-      <tbody>
-        <tr>
-          <td>1位</td>
-          <td>インベスコ 世界厳選株式オープン</td>
-          <td>投資信託</td>
-          <td>世界株</td>
-          <td>毎月分配</td>
-          <td>×</td>
-          <td>世界のベストとして知られる毎月決算型</td>
-        </tr>
+<p>
+最新ランキング順に高配当ETF・投信を比較できます。
+</p>
 
-        <tr>
-          <td>2位</td>
-          <td>WCM 世界成長株厳選ファンド</td>
-          <td>投資信託</td>
-          <td>世界成長株</td>
-          <td>分配型</td>
-          <td>×</td>
-          <td>世界の成長企業へ厳選投資</td>
-        </tr>
 
-        <tr>
-          <td>3位</td>
-          <td>【1489】NF日経高配当50 ETF</td>
-          <td>ETF</td>
-          <td>日本高配当株</td>
-          <td>年4回</td>
-          <td>○</td>
-          <td>日本の高配当株にまとめて投資できるETF</td>
-        </tr>
 
-        <tr>
-          <td>4位</td>
-          <td>【563A】GXNAS100Dカバコ</td>
-          <td>ETF</td>
-          <td>NASDAQ100</td>
-          <td>毎月分配</td>
-          <td>×</td>
-          <td>カバードコール戦略ETF</td>
-        </tr>
+<div class="table-wrap">
 
-        <tr>
-          <td>5位</td>
-          <td>楽天・JEPQ</td>
-          <td>投資信託</td>
-          <td>NASDAQ100系</td>
-          <td>毎月分配</td>
-          <td>×</td>
-          <td>毎月のインカム収入を目指す</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<table>
+
+<thead>
+
+<tr>
+<th>順位</th>
+<th>商品名</th>
+<th>種類</th>
+<th>投資対象</th>
+<th>分配頻度</th>
+<th>NISA</th>
+<th>特徴</th>
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+<td>1位</td>
+<td>インベスコ 世界厳選株式オープン</td>
+<td>投資信託</td>
+<td>世界株</td>
+<td>毎月分配</td>
+<td>×</td>
+<td>世界のベストとして人気の毎月決算型</td>
+</tr>
+
+
+<tr>
+<td>2位</td>
+<td>WCM 世界成長株厳選ファンド</td>
+<td>投資信託</td>
+<td>世界成長株</td>
+<td>分配型</td>
+<td>×</td>
+<td>世界の成長企業へ厳選投資</td>
+</tr>
+
+
+<tr>
+<td>3位</td>
+<td>【1489】NF日経高配当50 ETF</td>
+<td>ETF</td>
+<td>日本高配当株</td>
+<td>年4回</td>
+<td>○</td>
+<td>日本高配当株ETF</td>
+</tr>
+
+
+<tr>
+<td>4位</td>
+<td>【563A】GXNAS100Dカバコ</td>
+<td>ETF</td>
+<td>NASDAQ100</td>
+<td>毎月分配</td>
+<td>×</td>
+<td>カバードコール戦略ETF</td>
+</tr>
+
+
+<tr>
+<td>5位</td>
+<td>楽天・JEPQ</td>
+<td>投資信託</td>
+<td>NASDAQ100系</td>
+<td>毎月分配</td>
+<td>×</td>
+<td>毎月インカム収入を目指す商品</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
 </section>
+
+
+
+
 
 <section class="simulator" id="simulator">
-  <h2>配当金シミュレーター</h2>
-  <p>投資額から分配金、または欲しい分配金から必要資金を計算できます。</p>
 
-  <h3>① 投資額から計算</h3>
-  <input id="amount" type="number" placeholder="投資額 例：10,000,000">
-  <input id="yieldRate" type="number" placeholder="想定利回り(%) 例：5">
-  <button onclick="calculateDividend()">分配金を計算</button>
+<h2>
+配当金シミュレーター
+</h2>
 
-  <div id="result"></div>
 
-  <hr>
+<p>
+投資額から分配金、欲しい分配金から必要資金を計算できます。
+</p>
 
-  <h3>② 必要資金を逆算</h3>
-  <input id="targetIncome" type="number" placeholder="欲しい月額配当 例：50,000">
-  <input id="targetYield" type="number" placeholder="想定利回り(%) 例：5">
-  <button onclick="calculateNeedMoney()">必要資金を計算</button>
 
-  <div id="needResult"></div>
+
+<h3>
+① 投資額から計算
+</h3>
+
+
+<input
+id="amount"
+type="number"
+placeholder="投資額 例：10000000">
+
+
+<input
+id="yieldRate"
+type="number"
+placeholder="利回り 例：5">
+
+
+<button onclick="calculateDividend()">
+分配金を計算
+</button>
+
+
+<div id="result"></div>
+
+
+
+<hr>
+
+
+
+<h3>
+② 必要資金を逆算
+</h3>
+
+
+<input
+id="targetIncome"
+type="number"
+placeholder="欲しい月額配当 例：50000">
+
+
+<input
+id="targetYield"
+type="number"
+placeholder="想定利回り 例：5">
+
+
+<button onclick="calculateNeedMoney()">
+必要資金を計算
+</button>
+
+
+<div id="needResult"></div>
+
+
 </section>
 
+
+
+
 <footer>
-  <p>※本サイトは情報提供を目的としており、投資判断は自己責任でお願いします。</p>
+
+<p>
+※本サイトは情報提供を目的としており、投資判断は自己責任でお願いします。
+</p>
+
 </footer>
+
+
 
 <script src="data.js"></script>
 <script src="script.js"></script>
+
 
 </body>
 </html>
