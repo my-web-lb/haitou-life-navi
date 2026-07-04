@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>配当金を月5万円もらうにはいくら必要？｜配当生活ナビ</title>
+
+  <meta name="description"
+  content="配当金を月5万円受け取るにはいくら必要なのか。利回り別の必要投資額や高配当ETF・投信を紹介します。">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+配当生活ナビ
+</div>
+
+
+<nav>
+<a href="../index.html">ホーム</a>
+<a href="../ranking.html">ランキング</a>
+<a href="../index.html#comparison">比較表</a>
+<a href="../broker.html">証券会社比較</a>
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+<h1>
+配当金を月5万円<br>
+もらうにはいくら必要？
+</h1>
+
+<p>
+利回り別に必要投資額をシミュレーション
+</p>
+
+</section>
+
+
+
+
+
+
+<main>
+
+
+
+<section class="card">
+
+
+<h2>
+月5万円の配当生活とは？
+</h2>
+
+
+<p>
+毎月5万円の配当収入があると、年間では60万円の収入になります。
+</p>
+
+
+<p>
+家計の補助や老後資金づくりとして、高配当投資を検討する人が増えています。
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="comparison">
+
+
+<h2>
+利回り別 必要投資額
+</h2>
+
+
+
+<div class="table-wrap">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>想定利回り</th>
+<th>必要資金</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody>
+
+
+<tr>
+<td>4％</td>
+<td>約1,500万円</td>
+</tr>
+
+
+
+<tr>
+<td>6％</td>
+<td>約1,000万円</td>
+</tr>
+
+
+
+<tr>
+<td>10％</td>
+<td>約600万円</td>
+</tr>
+
+
+
+<tr>
+<td>15％</td>
+<td>約400万円</td>
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+人気の高配当商品
+</h2>
+
+
+<p>
+・インベスコ 世界厳選株式オープン
+</p>
+
+
+<p>
+・WCM 世界成長株厳選ファンド
+</p>
+
+
+<p>
+・【1489】NF日経高配当50
+</p>
+
+
+<p>
+・【563A】GXNAS100Dカバコ
+</p>
+
+
+<p>
+・楽天・JEPQ
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+まずは証券口座を準備
+</h2>
+
+
+<p>
+高配当ETFや投資信託を購入するには証券口座が必要です。
+</p>
+
+
+<a href="../broker.html" class="link-btn">
+証券会社を比較する
+</a>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+<p>
+※利回りや分配金は保証されません。投資判断は自己責任でお願いします。
+</p>
+
+
+</footer>
+
+
+
+
+</body>
+</html>
