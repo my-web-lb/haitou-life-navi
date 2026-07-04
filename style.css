@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", Arial, sans-serif;
   background: #f6f8fb;
   color: #222;
 }
@@ -140,56 +140,8 @@ h2 {
   width: 100%;
 }
 
+.comparison,
 .simulator {
-  background: white;
-  margin: 40px 8%;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-}
-
-.simulator input {
-  width: 100%;
-  margin-bottom: 12px;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #0b7a53;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #777;
-}
-
-@media (max-width: 700px) {
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  nav {
-    margin-top: 12px;
-  }
-
-  nav a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .search-box {
-    flex-direction: column;
-  }
-}
-.comparison {
   background: white;
   margin: 40px 8%;
   padding: 30px;
@@ -221,4 +173,54 @@ td {
 
 tr:hover {
   background: #f6fdf9;
+}
+
+.simulator input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#result,
+#needResult {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b7a53;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
 }
