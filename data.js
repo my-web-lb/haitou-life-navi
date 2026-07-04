@@ -55,7 +55,7 @@ const funds = [
     tags: ["SBI SCHD", "米国高配当", "米国株", "NISA", "投信"]
   },
   {
-    name: "1489 日経高配当株50 ETF",
+    name: "1489 日経高配当株50",
     type: "ETF",
     yield: "中〜高",
     frequency: "年4回",
