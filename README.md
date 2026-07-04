@@ -1,0 +1,1 @@
+# haitou-life-navi
