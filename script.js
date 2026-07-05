@@ -17,44 +17,47 @@ function displayFunds(list) {
 
   list.forEach(function(fund) {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "fund-card";
 
-    const tagsHtml = fund.tags.map(function(tag) {
+    const tagsHtml = fund.tags.slice(0, 3).map(function(tag) {
       return `<span class="badge">${tag}</span>`;
     }).join("");
 
-    let buttonHtml = "";
-
-    if (fund.url) {
-      buttonHtml = `
-        <button class="detail-btn" onclick="location.href='${fund.url}'">
-          詳しく見る
-        </button>
-      `;
-    } else {
-      buttonHtml = `
-        <button class="detail-btn" onclick="alert('詳細ページは準備中です')">
-          詳しく見る
-        </button>
-      `;
-    }
+    const nisaClass = fund.nisa.includes("NISA") ? "nisa-ok" : "nisa-ng";
 
     card.innerHTML = `
+      <div class="fund-card-top">
+        <span class="rank-badge">${fund.badge}</span>
+        <span class="fund-type">${fund.type}</span>
+      </div>
+
       <h3>${fund.name}</h3>
+
+      <div class="yield-box">
+        <div>
+          <span class="yield-label">利回り目安</span>
+          <strong>${fund.yieldDisplay}</strong>
+        </div>
+        <div>
+          <span class="yield-label">分配</span>
+          <strong>${fund.frequency}</strong>
+        </div>
+      </div>
+
+      <p class="fund-point">${fund.point}</p>
+
+      <div class="mini-info">
+        <span>コスト：${fund.fee}</span>
+        <span class="${nisaClass}">${fund.nisa}</span>
+      </div>
 
       <div class="badges">
         ${tagsHtml}
       </div>
 
-      <div class="info">
-        <p><strong>種類：</strong>${fund.type}</p>
-        <p><strong>利回り目安：</strong>${fund.yield}</p>
-        <p><strong>分配頻度：</strong>${fund.frequency}</p>
-        <p><strong>コスト：</strong>${fund.fee}</p>
-        <p><strong>NISA：</strong>${fund.nisa}</p>
-      </div>
-
-      ${buttonHtml}
+      <button class="detail-btn" onclick="location.href='${fund.url}'">
+        詳しく見る →
+      </button>
     `;
 
     fundList.appendChild(card);
@@ -78,9 +81,12 @@ function searchFunds() {
       fund.name + " " +
       fund.type + " " +
       fund.yield + " " +
+      fund.yieldDisplay + " " +
       fund.frequency + " " +
       fund.fee + " " +
       fund.nisa + " " +
+      fund.badge + " " +
+      fund.point + " " +
       fund.tags.join(" ");
 
     return text.includes(keyword);
