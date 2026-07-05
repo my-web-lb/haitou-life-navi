@@ -478,3 +478,36 @@ footer {
 .fund-card:hover {
   transform: translateY(-4px);
 }
+.hero-badge {
+  display: inline-block;
+  background: white;
+  color: #0b7a53;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 7px 14px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  margin-bottom: 18px;
+}
+
+.hero-links {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  background: rgba(255,255,255,0.8);
+  color: #0b7a53;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #cde8dc;
+}
+
+.hero-links a:hover {
+  background: white;
+}
