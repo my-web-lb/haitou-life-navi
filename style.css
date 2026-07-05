@@ -351,3 +351,41 @@ footer {
     min-height: auto;
   }
 }
+.big-yield {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.big-yield strong {
+  display: block;
+  font-size: 36px;
+  color: #0b7a53;
+}
+
+.big-yield span {
+  font-size: 13px;
+  color: #666;
+}
+
+
+.fund-info-list {
+  margin: 15px 0;
+}
+
+
+.fund-info-list div {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.fund-info-list span {
+  color: #777;
+}
+
+
+.fund-info-list strong {
+  color: #222;
+}
