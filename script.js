@@ -33,22 +33,26 @@ function displayFunds(list) {
 
       <h3>${fund.name}</h3>
 
-      <div class="yield-box">
-        <div>
-          <span class="yield-label">利回り目安</span>
-          <strong>${fund.yieldDisplay}</strong>
-        </div>
-        <div>
-          <span class="yield-label">分配</span>
-          <strong>${fund.frequency}</strong>
-        </div>
+      <div class="big-yield">
+        <strong>${fund.yieldDisplay}</strong>
+        <span>利回り(年率)</span>
       </div>
 
-      <p class="fund-point">${fund.point}</p>
+      <div class="fund-info-list">
+        <div>
+          <span>分配頻度</span>
+          <strong>${fund.frequency}</strong>
+        </div>
 
-      <div class="mini-info">
-        <span>コスト：${fund.fee}</span>
-        <span class="${nisaClass}">${fund.nisa}</span>
+        <div>
+          <span>信託報酬</span>
+          <strong>${fund.fee}</strong>
+        </div>
+
+        <div>
+          <span>NISA</span>
+          <strong class="${nisaClass}">${fund.nisa}</strong>
+        </div>
       </div>
 
       <div class="badges">
@@ -66,7 +70,6 @@ function displayFunds(list) {
 
 function searchFunds() {
   const input = document.getElementById("searchInput");
-
   if (!input) return;
 
   const keyword = input.value.trim();
@@ -86,7 +89,6 @@ function searchFunds() {
       fund.fee + " " +
       fund.nisa + " " +
       fund.badge + " " +
-      fund.point + " " +
       fund.tags.join(" ");
 
     return text.includes(keyword);
