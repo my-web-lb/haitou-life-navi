@@ -389,3 +389,92 @@ footer {
 .fund-info-list strong {
   color: #222;
 }
+.big-yield {
+  text-align: center;
+  background: linear-gradient(135deg, #e9fff5, #f7fffb);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+
+.big-yield strong {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  color: #0b7a53;
+  line-height: 1.1;
+}
+
+
+.big-yield span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
+  font-weight: 700;
+}
+
+
+
+
+.fund-info-list {
+  margin: 15px 0;
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 8px 14px;
+}
+
+
+
+.fund-info-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.fund-info-list div:last-child {
+  border-bottom: none;
+}
+
+
+
+.fund-info-list span {
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+.fund-info-list strong {
+  font-size: 14px;
+  color: #222;
+}
+
+
+
+.nisa-ok {
+  color: #0b7a53 !important;
+  font-weight: 900;
+}
+
+
+.nisa-ng {
+  color: #888 !important;
+  font-weight: 900;
+}
+
+
+
+.fund-card {
+  transition: 0.25s;
+}
+
+
+.fund-card:hover {
+  transform: translateY(-4px);
+}
