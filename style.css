@@ -5,17 +5,17 @@
 body {
   margin: 0;
   font-family: "Noto Sans JP", Arial, sans-serif;
-  background: #f6f8fb;
+  background: #f5f8f6;
   color: #222;
 }
 
 header {
-  background: white;
-  padding: 18px 8%;
+  background: rgba(255,255,255,0.96);
+  padding: 16px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -23,37 +23,39 @@ header {
 
 .logo {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 800;
   color: #0b7a53;
 }
 
 nav a {
-  margin-left: 22px;
+  margin-left: 18px;
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .hero {
-  padding: 80px 8%;
-  background: linear-gradient(135deg, #e8fff4, #eef4ff);
+  padding: 86px 8%;
+  background: linear-gradient(135deg, #dbfff0, #eef4ff);
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 42px;
-  line-height: 1.4;
-  margin-bottom: 16px;
+  font-size: 44px;
+  line-height: 1.35;
+  margin: 0 0 16px;
 }
 
 .hero p {
   font-size: 18px;
   color: #555;
+  margin-bottom: 28px;
 }
 
 .search-box {
-  margin: 32px auto 0;
-  max-width: 620px;
+  margin: 0 auto;
+  max-width: 680px;
   display: flex;
   gap: 10px;
 }
@@ -61,62 +63,157 @@ nav a {
 .search-box input,
 .simulator input {
   flex: 1;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #d9e2dd;
+  border-radius: 14px;
   font-size: 16px;
+  background: white;
 }
 
-button {
+button,
+.link-btn {
   padding: 13px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   background: #0b7a53;
   color: white;
-  font-weight: bold;
+  font-weight: 800;
   cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-button:hover {
-  opacity: 0.85;
+button:hover,
+.link-btn:hover {
+  opacity: 0.86;
+  transform: translateY(-1px);
 }
 
 .filters {
-  padding: 24px 8%;
+  padding: 22px 8%;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.filters button {
+  background: white;
+  color: #0b7a53;
+  border: 1px solid #cde8dc;
+}
+
 main {
-  padding: 30px 8%;
+  padding: 28px 8%;
 }
 
 h2 {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
+  gap: 18px;
 }
 
-.card {
+.card,
+.fund-card {
   background: white;
   border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
-.card h3 {
-  margin-top: 0;
+.fund-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 310px;
+}
+
+.fund-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.rank-badge {
+  background: #fff3d8;
+  color: #9a6400;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 9px;
+  border-radius: 999px;
+}
+
+.fund-type {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card h3,
+.fund-card h3 {
+  margin: 6px 0 14px;
+  color: #0b7a53;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.yield-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.yield-box div {
+  background: #f0fbf6;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.yield-label {
+  display: block;
+  font-size: 12px;
+  color: #68756f;
+  margin-bottom: 4px;
+}
+
+.yield-box strong {
+  font-size: 17px;
   color: #0b7a53;
 }
 
+.fund-point {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 6px 0 12px;
+}
+
+.mini-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.nisa-ok {
+  color: #0b7a53;
+  font-weight: 800;
+}
+
+.nisa-ng {
+  color: #888;
+  font-weight: 800;
+}
+
 .badges {
-  margin: 12px 0;
+  margin: 8px 0 12px;
 }
 
 .badge {
@@ -127,7 +224,7 @@ h2 {
   border-radius: 999px;
   font-size: 12px;
   margin: 3px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .info {
@@ -136,17 +233,17 @@ h2 {
 }
 
 .detail-btn {
-  margin-top: 14px;
+  margin-top: auto;
   width: 100%;
 }
 
 .comparison,
 .simulator {
   background: white;
-  margin: 40px 8%;
-  padding: 30px;
+  margin: 36px 8%;
+  padding: 28px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
 .table-wrap {
@@ -164,11 +261,13 @@ th {
   color: white;
   padding: 14px;
   text-align: left;
+  white-space: nowrap;
 }
 
 td {
   padding: 14px;
   border-bottom: 1px solid #eee;
+  white-space: nowrap;
 }
 
 tr:hover {
@@ -184,7 +283,7 @@ tr:hover {
 #needResult {
   margin-top: 20px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
   color: #0b7a53;
 }
 
@@ -198,51 +297,57 @@ footer {
   text-align: center;
   padding: 30px;
   color: #777;
+  font-size: 13px;
 }
 
 @media (max-width: 700px) {
   header {
     display: block;
     text-align: center;
+    padding: 14px 5%;
   }
 
   nav {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   nav a {
     display: inline-block;
-    margin: 6px 8px;
-    font-size: 14px;
+    margin: 5px 7px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 58px 6%;
   }
 
   .hero h1 {
     font-size: 30px;
   }
 
+  .hero p {
+    font-size: 15px;
+  }
+
   .search-box {
     flex-direction: column;
   }
-}
-.link-btn {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-.link-btn {
-  display: block;
-  width: 100%;
-  margin-top: 14px;
-  padding: 13px 20px;
-  border-radius: 10px;
-  background: #0b7a53;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.link-btn:hover {
-  opacity: 0.85;
+  main {
+    padding: 22px 5%;
+  }
+
+  .comparison,
+  .simulator {
+    margin: 28px 5%;
+    padding: 22px;
+  }
+
+  .card-grid {
+    gap: 14px;
+  }
+
+  .fund-card {
+    min-height: auto;
+  }
 }
